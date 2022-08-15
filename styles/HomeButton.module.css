@@ -5,6 +5,8 @@
 
     background: #0A3D04;
     border-radius: 10px;
+    outline: none;
+    border: 0;
 
     padding: 20px 40px;
     font-size: 20px;
