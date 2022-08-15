@@ -112,6 +112,11 @@ const DesktopFooter: ({}: {}) => JSX.Element = () => (
     </div>
   </footer>
 );
+const MobileHeader: ({ title }: { title: string }) => JSX.Element = ({
+  title,
+}) => (
+<div></div>
+);
 const MobileFooter: ({}: {}) => JSX.Element = () => (
   <footer>
     <div className={styles.subscription}>
@@ -164,8 +169,8 @@ const Layout: NextPage<{ children: React.ReactNode; title: string }> = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {mobile && <header>Mobile Header</header>}
-      {mobile || <DesktopHeader title={title} />}
+      {mobile && <MobileHeader title={title} />}
+      {!mobile && <DesktopHeader title={title} />}
 
       <main className={styles.main}>{children}</main>
 
