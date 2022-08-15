@@ -1,0 +1,10 @@
+.logo{
+    position: absolute;
+    left: 10%
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .logo{
+        left: 0
+    }
+}

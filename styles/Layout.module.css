@@ -1,0 +1,288 @@
+
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeHeader {
+    align-items: center;
+    padding: 60px 0;
+}
+
+.homeAltHeader {
+    align-items: center;
+    padding: 30px 0;
+}
+
+.homeNav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 20px;
+}
+
+.homeNav ul {
+    display: flex;
+    column-gap: 40px
+}
+
+.homeNav li {
+    color: #020202;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.homeNav li a {
+    /*position: relative*/
+}
+
+.homeNav li a::after {
+    width: 0;
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    height: 3px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #0A3D04;
+}
+
+.homeNav li:hover, .homeNav li:active {
+    color: #0A3D04;
+}
+
+.homeNav li a:hover::after, .homeNav li.active a::after {
+    content: "";
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .homeNav {
+        font-size: 18px;
+    }
+    .homeNav ul {
+        display: flex;
+        column-gap: 20px
+    }
+}
+
+@media screen and (max-width: 918px) {
+    .homeNav {
+        font-size: 16px;
+    }
+}
+
+.subscription {
+    background-color: #0A3D04;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 100px 10%;
+    user-select: none;
+}
+
+.subscription h1 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.subscription h4 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: DM Sans, sans-serif;
+}
+
+.subscriptionForm {
+    width: 100%;
+}
+
+.subscriptionForm .formGroup {
+    margin: 32px 0;
+    width: 100%;
+    display: flex;
+}
+
+.subscriptionForm button, .subscriptionForm input {
+    font-size: 24px;
+    font-family: DM Sans, sans-serif;
+    padding: 24px;
+    outline: none;
+    border: 0;
+}
+
+.subscriptionForm button {
+    background-color: #077835;
+    color: #FFFFFF;
+    border-radius: 0 24px 24px 0;
+    border: 0;
+    padding: 24px 64px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.subscriptionForm button:hover {
+    background-color: #076735;
+}
+
+.subscriptionForm input {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 24px 0 0 24px;
+}
+
+.footerLinks {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 130px 0 90px 0;
+}
+
+.footerLogoContainer {
+    width: 42.78%;
+}
+
+.footerLinksContainer {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.footerLinksContainer > div {
+    margin-right: 90px
+}
+
+.footerLinks h4, .mobileFooterLinks h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #0A3D04;
+    margin-bottom: 30px
+}
+
+.footerLinks li, .mobileFooterLinks li {
+    font-weight: 400;
+    font-size: 20px;
+    color: #3A3A3A;
+    margin-bottom: 22px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobileFooterLinks li:last-of-type {
+    margin-bottom: 0;
+}
+
+.footerLinks li:hover, .mobileFooterLinksContainer li:hover {
+    color: #0A3D04;
+}
+
+.rights {
+    font-family: DM Sans, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    color: #0A4E04;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .subscriptionForm button, .subscriptionForm input {
+        font-size: 16px;
+        padding: 20px;
+    }
+    .subscription h1 {
+        font-size: 22px;
+    }
+
+    .subscription h4 {
+        font-size: 16px;
+    }
+
+    .subscription {
+        padding: 60px 10%;
+    }
+
+    .subscriptionForm button {
+        padding: 20px 32px;
+    }
+}
+
+@media (max-width: 483px) {
+    .subscription {
+        padding: 40px 10%;
+    }
+    .subscription h1 {
+        font-size: 18px;
+    }
+
+    .subscription h4 {
+        font-size: 12px;
+    }
+
+    .subscriptionForm button, .subscriptionForm input {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .subscriptionForm button {
+        padding: 12px 18px;
+    }
+
+    .mobileFooterLinks li {
+        font-size: 16px;
+    }
+
+    .mobileFooterLinks h4 {
+        font-size: 18px;
+    }
+
+    .rights {
+        font-size: 16px;
+    }
+}
+
+.mobileFooterLinks {
+    background-color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.mobileFooterLogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.mobileFooterLinksContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobileFooterLinksContainer > div {
+    width: 100%;
+    padding-top: 48px;
+    background-color: #F9FFEF;
+}
+
+.mobileFooterLinksContainer > div:nth-of-type(2) {
+    padding-bottom: 48px;
+}
+
+.mobileFooterLinksContainer > div:nth-of-type(3) {
+    padding-top: 10px;
+}
+
+.mobileFooterLinksContainer > div:last-of-type {
+    background-color: #FFFFFF;
+}
