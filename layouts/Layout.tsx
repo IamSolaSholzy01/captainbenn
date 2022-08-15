@@ -1,8 +1,8 @@
+import React from 'react';
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
-import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Link from "next/link";
 import { HomeButton } from "../components/Buttons";
@@ -112,11 +112,39 @@ const DesktopFooter: ({}: {}) => JSX.Element = () => (
     </div>
   </footer>
 );
+
+const MobileNav: ({ show, setShow, title }: { show: boolean, setShow: any }, title: string) => JSX.Element = ({
+  show,
+  setShow,
+  title
+}) => show && (
+  <nav className={styles.mobileNav}>
+    <div className={styles.closeNav}>
+       <span onClick={(e)=>setShow(false)}>Close menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10005;</span>
+    </div>
+    <ul>
+      {pages.map((page) => (
+        <li
+          className={title == page.label ? styles.active : ""}
+          key={page.id}
+        >
+          <Link style={{marginBottom: '14px'}} href={page.to}>{page.label}</Link>
+          <hr />
+        </li>
+      ))}
+    </ul>
+  </nav>
+)
 const MobileHeader: ({ title }: { title: string }) => JSX.Element = ({
   title,
-}) => (
-<div></div>
-);
+}) => {
+const [showMobileNav, setMobileNav] = React.useState(false);
+return (
+<>
+  <MobileNav show={showMobileNav} setShow={setMobileNav} title={title} />
+  <span onClick={(e)=>setMobileNav(true)}>burger</span>
+</>
+)};
 const MobileFooter: ({}: {}) => JSX.Element = () => (
   <footer>
     <div className={styles.subscription}>
