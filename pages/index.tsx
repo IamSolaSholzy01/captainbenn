@@ -24,6 +24,11 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
           <div>Watch video</div>
         </div>
       </section>
+      <section>Why we stand out section</section>
+      <section>About Us Section</section>
+      <section>Popular Videos Section</section>
+      <section>Meet Team Section</section>
+      <section>Join our Foundation Section</section>
     </Layout>
   );
 };
