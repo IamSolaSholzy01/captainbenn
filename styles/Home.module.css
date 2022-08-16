@@ -118,6 +118,13 @@
   font-weight: 600;
   font-size: 28px;
   text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.standOutSection h4:hover {
+  transform: scale(1.2);
+  color: #0A3D04;
 }
 
 .standOutSection span {
