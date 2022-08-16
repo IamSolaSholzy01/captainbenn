@@ -1,0 +1,47 @@
+.flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.column {
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.alignStart {
+    align-items: flex-start;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.alignEnd {
+    align-items: flex-end;
+}

@@ -1,3 +1,7 @@
+.container section {
+  padding: 84px
+}
+
 .heroSection {
   position: relative;
   height: 100vh;
@@ -13,4 +17,143 @@
   transform: translate(-50%, -50%);
   width: 40vw;
   height: 40vw;
+}
+
+@media (max-width: 1250px) {
+  .hero {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .hero {
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+.rumbleSection { text-align: center; }
+.rumbleSection h3 {
+  font-weight: 700;
+  font-size: 120px;
+  margin-bottom: 24px;
+  color: #0A3D04;
+}
+
+.rumbleSection p {
+  margin: auto;
+  font-size: 24px;
+  padding: 0 150px;
+}
+
+.rumbleSection > div {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+  align-items: center;
+}
+
+.rumbleSection > div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  cursor: pointer
+}
+
+.rumbleSection > div > div:hover span {
+  color: #0A3D04;
+}
+
+.rumbleSection > div > div:hover .playContainer {
+  background-color: #BFE2BB;
+}
+
+.rumbleSection > div > div:hover .iconHolder {
+  background-color: #ECFDE1;
+}
+
+.playContainer {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  border: 0 dashed #A3CA9E;
+  background-color: #ECFDE1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.iconHolder {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #BFE2BB;
+  transition: all 0.3s ease-in-out;
+}
+
+.standOutSection {
+  background-color: #F9FFEF;
+  padding: 120px !important;
+}
+
+.standOutSection h5 {
+  font-family: DM Sans, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration-line: underline;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.standOutSection h4 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+
+.standOutSection span {
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.foundationSection {
+  text-align: left !important;
+}
+
+.imageContainer {
+  width: 1300px;
+  height: 100px;
+  float: right;
+}
+
+.foundationSection h3 {
+  font-family: DM Sans, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-decoration-line: underline;
+  margin-bottom: 26px;
+  color: #0A3D04;
+
+}
+
+.foundationSection h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+
+.foundationSection p {
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 26px;
 }

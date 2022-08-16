@@ -1,9 +1,8 @@
 .button {
     font-family: DM Sans, sans-serif;
-    position: absolute;
+    /*position: absolute;*/
     right: 8%;
     outline: none;
-    border: none;
 
     background: #0A3D04;
     border-radius: 10px;

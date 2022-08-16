@@ -38,6 +38,11 @@ ul, ul li {
   list-style: none;
 }
 
+.absolute {
+  position: absolute !important;
+}
+
+
 /*@media (prefers-color-scheme: dark) {*/
 /*  html {*/
 /*    color-scheme: dark;*/
