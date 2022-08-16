@@ -126,7 +126,7 @@ const MobileNav: ({
       <nav className={styles.mobileNav}>
         <div className={styles.closeNav}>
           <span onClick={() => setShow(false)}>
-            Close menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10005;
+            Close menu &nbsp;&nbsp;&nbsp;&nbsp;&#10005;
           </span>
         </div>
         <ul>
@@ -138,7 +138,7 @@ const MobileNav: ({
               <Link style={{ marginBottom: "14px" }} href={page.to}>
                 {page.label}
               </Link>
-              <hr />
+              <span className={styles.hr}></span>
             </li>
           ))}
         </ul>
