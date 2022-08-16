@@ -135,6 +135,7 @@ const MobileNav: ({ show, setShow, title }: { show: boolean, setShow: any }, tit
     </ul>
   </nav>
 )
+
 const MobileHeader: ({ title }: { title: string }) => JSX.Element = ({
   title,
 }) => {
@@ -145,6 +146,7 @@ return (
   <span onClick={(e)=>setMobileNav(true)}>burger</span>
 </>
 )};
+
 const MobileFooter: ({}: {}) => JSX.Element = () => (
   <footer>
     <div className={styles.subscription}>
