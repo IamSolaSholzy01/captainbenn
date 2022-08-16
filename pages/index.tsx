@@ -131,7 +131,6 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
             </Flex>
           </Flex>
         </section>
-        <section>Popular Videos Section</section>
         <section className={styles.teamSection}>
           <Flex direction={"row"} justifyContent={"between"}>
             <h5>Meet the Team</h5>

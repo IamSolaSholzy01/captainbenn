@@ -1,0 +1,66 @@
+.container section {
+    padding: 120px;
+}
+.welcomeSection, .valuesSection {
+    background-color: #F9FFEF;
+    padding-top: 200px !important;
+}
+
+.welcomeSection blockquote {
+    position: relative;
+    max-width: 400px;
+}
+
+.welcomeSection blockquote::before {
+    content: '';
+    background-image: url('../public/images/quote.png');
+    position: absolute;
+    width: 100px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    top: -90%;
+    font-size: 40px;
+    font-family: Arial, serif;
+}
+
+.welcomeSection h3, .valuesSection h3 {
+    font-weight: 600;
+    font-size: 60px;
+    color: #0A3D04;
+}
+
+.welcomeSection p {
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.teamSection h5, .whatWeDoSection h5 {
+    font-family: DM Sans, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #0A3D04;
+}
+
+.teamSection span, .whatWeDoSection span {
+    text-decoration: underline;
+}
+
+.teamSection > div > div.link::after, .whatWeDoSection > div > div.link::after {
+    content: '';
+    text-decoration: none;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-45deg) translateX(5px) translateY(2px);
+}
+
+.teamSection > div > div.link:hover::after, .whatWeDoSection > div > div.link:hover::after {
+    transform: rotate(-45deg) translateX(15px) translateY(12px);
+}
