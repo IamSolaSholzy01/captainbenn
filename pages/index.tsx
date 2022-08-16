@@ -45,6 +45,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
         {/*  </a>*/}
         {/*</div>*/}
       </div>
+      <section>Join our foundation</section>
     </Layout>
   );
 };
