@@ -37,7 +37,7 @@ const Contact: NextPage<{ title: string }> = ({ title }) => {
           <div className={styles.formRow}>
             <div className={styles.formGroup}>
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" />
             </div>
             <div className={styles.formGroup}>
               <label className={styles.left} htmlFor="phoneNumber">Phone Number</label>
