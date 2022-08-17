@@ -14,7 +14,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
       <div className={styles.container}>
         <section className={styles.heroSection}>
           <div className={styles.hero}>
-            <Image alt={"logo"} src={"/images/hero.png"} layout={"fill"} />
+            <Image alt={"logo"} src={"/images/hero.webp"} layout={"fill"} />
           </div>
         </section>
         <section className={styles.rumbleSection}>
@@ -99,7 +99,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
                 justifyContent={mobile ? "center" : "end"}
               >
                 <Image
-                  src={"/images/friends.png"}
+                  src={"/images/friends.webp"}
                   alt={"lineup"}
                   height={mobile ? "300" : "400px"}
                   width={mobile ? "300" : "400px"}
@@ -117,7 +117,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
                 justifyContent={"start"}
               >
                 <Image
-                  src={"/images/post.png"}
+                  src={"/images/post.webp"}
                   alt={"lineup"}
                   height={"400px"}
                   width={"400px"}
@@ -178,7 +178,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
                 justifyContent={mobile ? "center" : "end"}
               >
                 <Image
-                  src={"/images/teamLineUp.png"}
+                  src={"/images/teamLineUp.webp"}
                   alt={"lineup"}
                   height={"500px"}
                   width={"500px"}

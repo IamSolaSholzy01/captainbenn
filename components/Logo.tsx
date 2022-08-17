@@ -9,7 +9,7 @@ const Logo: NextComponentType = () => {
     <div className={styles.logo}>
       <Image
         alt={"logo"}
-        src={!mobile ? "/images/hero.png" : "/images/hero-mobile.png"}
+        src={!mobile ? "/images/hero.webp" : "/images/hero-mobile.webp"}
         height={200}
         width={200}
       />

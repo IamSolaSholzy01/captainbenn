@@ -70,7 +70,7 @@ const About: NextPage<{ title: string }> = ({ title }) => {
                 justifyContent={"end"}
               >
                 <Image
-                  src={"/images/goal.png"}
+                  src={"/images/goal.webp"}
                   alt={"lineup"}
                   height={"600px"}
                   width={"600px"}
@@ -86,7 +86,7 @@ const About: NextPage<{ title: string }> = ({ title }) => {
                 justifyContent={"start"}
               >
                 <Image
-                  src={"/images/rafiki.png"}
+                  src={"/images/rafiki.webp"}
                   alt={"lineup"}
                   height={"600px"}
                   width={"600px"}
