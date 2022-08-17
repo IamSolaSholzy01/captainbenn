@@ -49,7 +49,7 @@ const Contact: NextPage<{ title: string }> = ({ title }) => {
             <textarea name="message" id="message" cols="30" rows="20"></textarea>
           </div>
           <div className={styles.recaptcha}>
-            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+            <div className="g-recaptcha" data-sitekey="your_site_key"></div>
           </div>
           <button type="submit">Submit</button>
         </form>
