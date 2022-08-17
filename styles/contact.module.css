@@ -1,0 +1,145 @@
+.container section:not(first-child) {
+    padding: 120px
+}
+
+/*
+ =======================
+ How can we help section
+ =======================
+*/
+
+.helpSection {
+    margin-top: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpSection > h2 {
+    color: #0A3D04;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.helpSection > p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/*
+ ====================
+ Contact Form section
+ ====================
+*/
+
+.contactFormSection {
+    background-color: #F9FFEF;
+    padding: 150px 280px!important;
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 62px;
+}
+
+.formGroup {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup > label {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.formGroup > label.left {
+    margin-left: 80px;
+}
+
+.formGroup > input {
+    margin-right: 80px;
+    border: 1px solid rgba(10, 61, 4, .5);
+    border-radius: 4px;
+    height: 46px;
+}
+
+.formGroup > input.left {
+    margin-left: 80px;
+    margin-right: 0;
+}
+
+.formGroup > textarea {
+    border: 1px solid rgba(10, 61, 4, .5);
+    border-radius: 4px;
+}
+
+.recaptcha {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactFormSection > button {
+    height: 80px;
+    background-color: #0A3D04;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    margin: 12px 20px;
+    cursor: pointer;
+}
+
+.contactFormSection > button:hover {
+    background: #0A4E04;
+    border: 1px solid #0A4E04;
+}
+
+/*
+ ===========================
+ Join our foundation section
+ ===========================
+*/
+
+.foundationSection {
+    text-align: left !important;
+}
+
+.imageContainer {
+    width: 1300px;
+    height: 100px;
+    float: right;
+}
+
+.foundationSection h3 {
+    font-family: DM Sans, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration-line: underline;
+    margin-bottom: 26px;
+    color: #0A3D04;
+
+}
+
+.foundationSection h4 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 26px;
+}
+
+.foundationSection p {
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 26px;
+}
