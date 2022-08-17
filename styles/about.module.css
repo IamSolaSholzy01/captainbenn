@@ -41,7 +41,7 @@
 
 .teamSection h5, .whatWeDoSection h5 {
     font-family: DM Sans, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
     color: #0A3D04;
 }
@@ -63,4 +63,13 @@
 
 .teamSection > div > div.link:hover::after, .whatWeDoSection > div > div.link:hover::after {
     transform: rotate(-45deg) translateX(15px) translateY(12px);
+}
+
+.whatWeDoSection p {
+    max-width: 400px;
+}
+
+.valuesSection > div > div {
+    margin-top: 100px;
+    max-width: 600px
 }
