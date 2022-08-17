@@ -1,0 +1,71 @@
+.container section {
+    padding: 120px
+}
+
+.mindsSection {
+    background-color: #F9FFEF;
+    padding-top: 200px !important;
+}
+
+.mindsSection h2 {
+    padding: 0 120px;
+    font-weight: 600;
+    font-size: 64px;
+    text-align: center;
+    color: #0A3D04;
+}
+
+.visionSection {
+    text-align: center;
+}
+
+.visionSection h4 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #0A3D04;
+    text-transform: uppercase;
+    margin-bottom: 30px
+}
+
+.visionSection p {
+    padding: 0 120px;
+    font-size: 24px
+}
+
+.visionSection div.link {
+    padding: 48px
+}
+
+.visionSection div.link::after {
+    content: '';
+    text-decoration: none;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-45deg) translateX(5px) translateY(2px);
+}
+
+.visionSection div.link:hover::after {
+    transform: rotate(-45deg) translateX(15px) translateY(12px);
+}
+
+.pioneerSection {
+    padding: 60px 120px !important;
+}
+
+.pioneerSection h5 {
+    font-family: DM Sans, sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-decoration-line: underline;
+    color: #0A3D04;
+    padding-bottom: 30px;
+}
+
+.pioneerSection button {
+    width: 80%;
+    display: block;
+    margin: 60px auto
+}

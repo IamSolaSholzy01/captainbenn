@@ -12,7 +12,7 @@ const pages = [
   { label: "Home", to: "/", id: "home" },
   { label: "About", to: "/about", id: "about" },
   { label: "Videos", to: "/about", id: "videos" },
-  { label: "Partners", to: "/about", id: "partners" },
+  { label: "Partners", to: "/partners", id: "partners" },
   { label: "Contact", to: "/contact", id: "contact" },
 ];
 
