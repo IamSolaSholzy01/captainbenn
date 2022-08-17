@@ -6,7 +6,7 @@ import styles from "../styles/FooterLogo.module.css";
 const FooterLogo: NextComponentType = () => {
   return (
     <div className={styles.logo}>
-      <Image alt={"logo"} src={"/images/hero.png"} height={160} width={160} />
+      <Image alt={"logo"} src={"/images/hero.webp"} height={160} width={160} />
       <p>Best Football Experience you can get</p>
     </div>
   );

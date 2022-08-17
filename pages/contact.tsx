@@ -79,7 +79,7 @@ const Contact: NextPage<{ title: string }> = ({ title }) => {
                 justifyContent={"end"}
               >
                 <Image
-                  src={"/images/teamLineUp.png"}
+                  src={"/images/teamLineUp.webp"}
                   alt={"lineup"}
                   height={"500px"}
                   width={"500px"}

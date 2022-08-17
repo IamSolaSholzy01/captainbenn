@@ -13,7 +13,7 @@
 
 .welcomeSection blockquote::before {
     content: '';
-    background-image: url('../public/images/quote.png');
+    background-image: url('../public/images/quote.webp');
     position: absolute;
     width: 100px;
     padding-bottom: 25px;
