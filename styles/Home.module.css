@@ -100,7 +100,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.standOutSection {
+.standOutSection, .teamSection {
   background-color: #F9FFEF;
   padding: 120px !important;
 }
@@ -143,6 +143,12 @@
   float: right;
 }
 
+.altImageContainer {
+  width: 1300px;
+  height: 100px;
+  float: left;
+}
+
 .foundationSection h3 {
   font-family: DM Sans, sans-serif;
   font-weight: 600;
@@ -163,4 +169,61 @@
   font-weight: 300;
   font-size: 24px;
   margin-bottom: 26px;
+}
+
+.teamSection h5 {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-decoration-line: underline;
+  color: #0A3D04;
+}
+
+.teamSection span {
+  text-decoration: underline;
+}
+
+.teamSection > div > div::after {
+  content: '';
+  text-decoration: none;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-45deg) translateX(5px) translateY(2px);
+}
+
+.teamSection > div > div:hover::after {
+  transform: rotate(-45deg) translateX(15px) translateY(12px);
+}
+
+.aboutSection {
+  margin: 120px 0
+}
+
+.aboutSection h5, .videosSection h5 {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-decoration-line: underline;
+  color: #0A3D04;
+  margin-bottom: 32px;
+}
+
+.aboutSection p, .videosSection p {
+  max-width: 450px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.videosSection {
+  text-align: right
+}
+
+.videosSection h6 {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
 }

@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import Layout from "../layouts/Layout";
 import Image from "next/image";
+import Link from "next/link";
 import { PrimaryButton } from "../components/Buttons";
 import Flex from "../components/Flex";
 
@@ -69,9 +70,78 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
             </Flex>
           </Flex>
         </section>
-        <section>About Us Section</section>
-        <section>Popular Videos Section</section>
-        <section>Meet Team Section</section>
+        <section className={styles.aboutSection}>
+          <Flex direction={"row"} alignItems={"center"}>
+            <Flex direction={"column"}>
+              <h5>About Us</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                sit amet
+              </p>
+              <PrimaryButton text={"Get Started"} />
+            </Flex>
+            <div className={styles.imageContainer}>
+              <Flex
+                direction={"row"}
+                alignItems={"center"}
+                justifyContent={"end"}
+              >
+                <Image
+                  src={"/images/friends.png"}
+                  alt={"lineup"}
+                  height={"400px"}
+                  width={"400px"}
+                />
+              </Flex>
+            </div>
+          </Flex>
+        </section>
+        <section className={styles.videosSection}>
+          <Flex direction={"row"} alignItems={"center"}>
+            <div className={styles.altImageContainer}>
+              <Flex
+                direction={"row"}
+                alignItems={"center"}
+                justifyContent={"start"}
+              >
+                <Image
+                  src={"/images/post.png"}
+                  alt={"lineup"}
+                  height={"400px"}
+                  width={"400px"}
+                />
+              </Flex>
+            </div>
+            <Flex
+              direction={"column"}
+              justifyContent={"end"}
+              alignItems={"end"}
+            >
+              <h5>Popular Videos</h5>
+              <h6>Our recent videos from recent and training matches</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                sit amet
+              </p>
+              <PrimaryButton text={"Get Started"} />
+            </Flex>
+          </Flex>
+        </section>
+        <section className={styles.teamSection}>
+          <Flex direction={"row"} justifyContent={"between"}>
+            <h5>Meet the Team</h5>
+            <Link href={"/about"}>
+              <div>
+                <span>View All</span>
+              </div>
+            </Link>
+          </Flex>
+          <div>Images will go here</div>
+        </section>
         <section className={styles.foundationSection}>
           <Flex
             direction={"row"}

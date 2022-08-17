@@ -13,6 +13,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: DM Sans;
+  src: url('../public/fonts/DM_Sans/DMSans-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
