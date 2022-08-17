@@ -46,7 +46,7 @@ const Contact: NextPage<{ title: string }> = ({ title }) => {
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="20"></textarea>
+            <textarea name="message" id="message" cols={30} rows={20}></textarea>
           </div>
           <div className={styles.recaptcha}>
             <div className="g-recaptcha" data-sitekey="your_site_key"></div>
