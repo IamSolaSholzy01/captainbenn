@@ -9,7 +9,7 @@ const Flex: ({
   alignItems,
 }: {
   children: ReactNode;
-  direction: "row" | "column";
+  direction: "row" | "column" | "row-reverse" | "column-reverse";
   className?: string;
   justifyContent?: "between" | "center" | "start" | "around" | "end";
   alignItems?: "center" | "start" | "end";
@@ -22,7 +22,14 @@ const Flex: ({
 }) => {
   let overallClass = styles.flex;
   overallClass += className ? " " + className : "";
-  overallClass += direction === "row" ? " " + styles.row : " " + styles.column;
+  overallClass +=
+    direction === "row"
+      ? " " + styles.row
+      : direction === "column"
+      ? " " + styles.column
+      : direction === "row-reverse"
+      ? " " + styles.rowReverse
+      : " " + styles.columnReverse;
   switch (justifyContent) {
     case "around":
       overallClass += " " + styles.around;
