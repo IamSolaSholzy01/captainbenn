@@ -5,8 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { PrimaryButton } from "../components/Buttons";
 import Flex from "../components/Flex";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Home: NextPage<{ title: string }> = ({ title }) => {
+  const mobile = useMediaQuery("(max-width: 900px)");
   return (
     <Layout title={title}>
       <div className={styles.container}>
@@ -55,7 +57,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
         </section>
         <section className={styles.standOutSection}>
           <h5>Why we stand out</h5>
-          <Flex direction={"row"} justifyContent={"around"}>
+          <Flex direction={mobile ? "column" : "row"} justifyContent={"around"}>
             <Flex direction={"column"} alignItems={"center"}>
               <h4>50+</h4>
               <span>Videos</span>
@@ -71,38 +73,46 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
           </Flex>
         </section>
         <section className={styles.aboutSection}>
-          <Flex direction={"row"} alignItems={"center"}>
-            <Flex direction={"column"}>
-              <h5>About Us</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-                sit amet
-              </p>
+          <Flex
+            direction={mobile ? "column-reverse" : "row"}
+            alignItems={"center"}
+          >
+            <Flex direction={"column"} alignItems={mobile ? "center" : "start"}>
+              <Flex
+                direction={"column"}
+                alignItems={mobile ? "center" : "start"}
+              >
+                <h5>About Us</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                  sit amet
+                </p>
+              </Flex>
               <PrimaryButton text={"Get Started"} />
             </Flex>
             <div className={styles.imageContainer}>
               <Flex
-                direction={"row"}
+                direction={mobile ? "column" : "row"}
                 alignItems={"center"}
-                justifyContent={"end"}
+                justifyContent={mobile ? "center" : "end"}
               >
                 <Image
                   src={"/images/friends.png"}
                   alt={"lineup"}
-                  height={"400px"}
-                  width={"400px"}
+                  height={mobile ? "300" : "400px"}
+                  width={mobile ? "300" : "400px"}
                 />
               </Flex>
             </div>
           </Flex>
         </section>
         <section className={styles.videosSection}>
-          <Flex direction={"row"} alignItems={"center"}>
+          <Flex direction={mobile ? "column" : "row"} alignItems={"center"}>
             <div className={styles.altImageContainer}>
               <Flex
-                direction={"row"}
+                direction={mobile ? "column" : "row"}
                 alignItems={"center"}
                 justifyContent={"start"}
               >
@@ -116,8 +126,8 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
             </div>
             <Flex
               direction={"column"}
-              justifyContent={"end"}
-              alignItems={"end"}
+              justifyContent={mobile ? "center" : "end"}
+              alignItems={mobile ? "center" : "end"}
             >
               <h5>Popular Videos</h5>
               <h6>Our recent videos from recent and training matches</h6>
@@ -144,7 +154,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
         </section>
         <section className={styles.foundationSection}>
           <Flex
-            direction={"row"}
+            direction={mobile ? "column-reverse" : "row"}
             alignItems={"center"}
             justifyContent={"between"}
           >
@@ -165,7 +175,7 @@ const Home: NextPage<{ title: string }> = ({ title }) => {
               <Flex
                 direction={"row"}
                 alignItems={"center"}
-                justifyContent={"end"}
+                justifyContent={mobile ? "center" : "end"}
               >
                 <Image
                   src={"/images/teamLineUp.png"}
