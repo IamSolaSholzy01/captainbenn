@@ -1,5 +1,5 @@
-.container section:not(first-child) {
-    padding: 120px
+.container section {
+    padding: 7.5rem;
 }
 
 /*
@@ -9,8 +9,8 @@
 */
 
 .helpSection {
-    margin-top: 200px;
-    height: 200px;
+    margin-top: 12.5rem;
+    height: 12.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +20,13 @@
 .helpSection > h2 {
     color: #0A3D04;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .helpSection > p {
     color: #000000;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 /*
@@ -37,22 +37,28 @@
 
 .contactFormSection {
     background-color: #F9FFEF;
-    padding: 150px 280px!important;
+    padding: 7rem 0!important;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .formRow {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-bottom: 62px;
+    width: 75%;
 }
 
 .formGroup {
     flex: 50%;
     display: flex;
     flex-direction: column;
+    width: 75%;
+    margin-bottom: 3.875rem;
+}
+
+.formRow > .formGroup {
+    width: 100%;
 }
 
 .formGroup > label {
@@ -103,6 +109,7 @@
     font-size: 28px;
     margin: 12px 20px;
     cursor: pointer;
+    width: 65%;
 }
 
 .contactFormSection > button:hover {
@@ -146,4 +153,65 @@
     font-weight: 300;
     font-size: 24px;
     margin-bottom: 26px;
+}
+
+@media (max-width: 768px) {
+    .contactFormSection {
+        padding: 4rem 0!important;
+    }
+
+    .formRow {
+        flex-direction: column;
+    }
+
+    .formGroup > label, .formGroup > input {
+        margin: 0!important;
+    }
+
+    .helpSection {
+        margin: 0;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .grid {
+        display: grid;
+    }
+}
+
+@media (max-width: 715px) {
+    .container section {
+        padding: 4rem;
+    }
+
+    .helpSection > h2 {
+        font-size: 2rem;
+    }
+    
+    .helpSection > p {
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .container section {
+        padding: 3rem;
+    }
+
+    .helpSection > h2 {
+        font-size: 1.7rem;
+    }
+    
+    .helpSection > p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .container section {
+        padding: 2rem;
+    }
 }
