@@ -59,7 +59,7 @@ const Contact: NextPage<{ title: string }> = ({ title }) => {
             alignItems={"center"}
             justifyContent={"between"}
           >
-            <div>
+            <div className={styles.grid}>
               <h3>Join our Foundation</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem

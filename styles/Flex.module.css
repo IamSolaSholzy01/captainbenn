@@ -55,3 +55,11 @@
 .alignEnd {
     align-items: flex-end;
 }
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column-reverse;
+        column-gap: 0;
+        row-gap: 5.8rem;
+    }
+}
