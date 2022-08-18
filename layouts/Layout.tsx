@@ -142,6 +142,10 @@ const MobileNav: ({
             </li>
           ))}
         </ul>
+        <div className={styles.mobileKeepTouch}>
+          <span>Keep in touch</span>
+          <div className={styles.mobileNavSocial}></div>
+        </div>
       </nav>
     )}
   </>

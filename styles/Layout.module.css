@@ -325,7 +325,6 @@ header.mobile {
 .mobileNav ul {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 180px);
 }
 
 .mobileNav > * {
@@ -359,4 +358,20 @@ header.mobile {
 
 .absolute {
     position: absolute;
+}
+
+.mobileKeepTouch {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-family: DM Sans, sans-serif;
+    color: #FFFFFF;
+    margin-left: 1.2rem;
+}
+
+.mobileNavSocial {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    margin-top: .95rem;
 }
