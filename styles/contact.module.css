@@ -24,9 +24,10 @@
 }
 
 .helpSection > p {
+    font-family: 'DM Sans', 'Sora', sans-serif;
     color: #000000;
     font-weight: 500;
-    font-size: 1.375rem;
+    font-size: 2.1rem;
 }
 
 /*
@@ -185,33 +186,5 @@
 @media (max-width: 715px) {
     .container section {
         padding: 4rem;
-    }
-
-    .helpSection > h2 {
-        font-size: 2rem;
-    }
-    
-    .helpSection > p {
-        font-size: 1.375rem;
-    }
-}
-
-@media (max-width: 425px) {
-    .container section {
-        padding: 3rem;
-    }
-
-    .helpSection > h2 {
-        font-size: 1.7rem;
-    }
-    
-    .helpSection > p {
-        font-size: .9rem;
-    }
-}
-
-@media (max-width: 425px) {
-    .container section {
-        padding: 2rem;
     }
 }
