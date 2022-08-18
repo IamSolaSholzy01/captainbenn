@@ -1,14 +1,17 @@
 .container section {
-    padding: 120px;
+    padding: 7.5rem;
 }
 .welcomeSection, .valuesSection {
     background-color: #F9FFEF;
-    padding-top: 200px !important;
 }
 
 .welcomeSection blockquote {
     position: relative;
     max-width: 400px;
+    padding-top: 1rem;
+    font-size: max(12px, 1rem);
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .welcomeSection blockquote::before {
@@ -16,25 +19,36 @@
     background-image: url('../public/images/quote.webp');
     position: absolute;
     width: 100px;
-    padding-bottom: 25px;
+    padding-bottom: 0.5625rem;
     border-bottom: 3px solid;
-    height: 24px;
+    height: 1.5rem;
     background-repeat: no-repeat;
-    background-size: 25px;
+    background-size: 1.5625rem;
     top: -90%;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: Arial, serif;
 }
 
+@media (min-width: 900px) {
+    .welcomeSection, .valuesSection {
+        background-color: #F9FFEF;
+        padding-top: 12.5rem !important;
+    }
+    .welcomeSection blockquote {
+        margin-bottom: 0
+    }
+}
+
+
 .welcomeSection h3, .valuesSection h3 {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #0A3D04;
 }
 
-.welcomeSection p {
+.container p {
     font-weight: 300;
-    font-size: 18px;
+    font-size: max(14px, 1.125rem);
     max-width: 600px;
     margin-bottom: 60px;
 }
@@ -42,7 +56,7 @@
 .teamSection h5, .whatWeDoSection h5 {
     font-family: DM Sans, sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     color: #0A3D04;
 }
 

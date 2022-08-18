@@ -319,6 +319,7 @@ header.mobile {
     text-align: right;
     color: white;
     margin-right: 5px;
+    font-size: 20px
 }
 
 .mobileNav ul {
@@ -339,5 +340,19 @@ header.mobile {
     display: flex;
     height: 0;
     width: 100%;
-    border: .5px solid #FFFFFF;
+    border: calc(1px/2) solid #FFFFFF;
+    margin-top: 10px;
+    opacity: 0.5
+}
+
+.mobileNav li {
+    font-family: DM Sans, sans-serif;
+    margin-top: 3rem;
+    padding: 10px;
+    font-size: min(3rem, 32px)
+}
+
+.mobileNav li > a {
+    padding-bottom: 10px;
+    margin-left: .375rem;
 }

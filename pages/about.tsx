@@ -4,14 +4,16 @@ import styles from "../styles/about.module.css";
 import Flex from "../components/Flex";
 import Link from "next/link";
 import Image from "next/image";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const About: NextPage<{ title: string }> = ({ title }) => {
+  const mobile = useMediaQuery("(max-width: 900px)");
   return (
     <Layout title={title}>
       <div className={styles.container}>
         <section className={styles.welcomeSection}>
           <Flex
-            direction={"row"}
+            direction={mobile ? "column" : "row"}
             alignItems={"center"}
             justifyContent={"between"}
           >
@@ -78,7 +80,7 @@ const About: NextPage<{ title: string }> = ({ title }) => {
               </Flex>
             </div>
           </Flex>
-          <Flex direction={"row"} alignItems={"center"}>
+          <Flex direction={mobile ? "column" : "row"} alignItems={"center"}>
             <div className={styles.altImageContainer}>
               <Flex
                 direction={"row"}
@@ -112,13 +114,16 @@ const About: NextPage<{ title: string }> = ({ title }) => {
           </Flex>
         </section>
         <section className={styles.valuesSection}>
-          <Flex direction={"row"} justifyContent={"between"}>
+          <Flex
+            direction={mobile ? "column" : "row"}
+            justifyContent={"between"}
+          >
             <h3>OUR VALUES</h3>
             <div>
               <Flex direction={"row"} alignItems={"center"}>
                 <svg
-                  width="162"
-                  height="162"
+                  width={mobile ? "100" : "162"}
+                  height={mobile ? "100" : "162"}
                   viewBox="0 0 162 162"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -155,8 +160,8 @@ const About: NextPage<{ title: string }> = ({ title }) => {
               </Flex>
               <Flex direction={"row"} alignItems={"center"}>
                 <svg
-                  width="162"
-                  height="162"
+                  width={mobile ? "100" : "162"}
+                  height={mobile ? "100" : "162"}
                   viewBox="0 0 162 162"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -194,8 +199,8 @@ const About: NextPage<{ title: string }> = ({ title }) => {
               </Flex>
               <Flex direction={"row"} alignItems={"center"}>
                 <svg
-                  width="162"
-                  height="162"
+                  width={mobile ? "100" : "162"}
+                  height={mobile ? "100" : "162"}
                   viewBox="0 0 162 162"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
