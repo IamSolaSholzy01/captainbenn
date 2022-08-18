@@ -366,7 +366,8 @@ header.mobile {
     font-size: 2.5rem;
     font-family: DM Sans, sans-serif;
     color: #FFFFFF;
-    margin-left: 1.2rem;
+    margin-left: .7rem;
+    margin-top: 12rem;
 }
 
 .mobileNavSocial {
@@ -374,4 +375,5 @@ header.mobile {
     flex-direction: row;
     column-gap: 1.5rem;
     margin-top: .95rem;
+    margin-left: -1.35rem;
 }
