@@ -72,3 +72,7 @@ ul, ul li {
 /*    background: black;*/
 /*  }*/
 /*}*/
+
+a, button, header, label, footer {
+  user-select: none;
+}
